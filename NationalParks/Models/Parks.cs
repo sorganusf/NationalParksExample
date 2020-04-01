@@ -15,7 +15,7 @@ namespace NationalParks.Models
   }
 
   public class Parks
-  {
+  { 
     public string location { get; set; }
     public List<Park> results { get; set; }
   }
