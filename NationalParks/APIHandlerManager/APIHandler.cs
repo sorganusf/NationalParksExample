@@ -4,7 +4,7 @@ using System.Linq;
 using System.Net.Http;
 using Newtonsoft.Json;
 using NationalParks.Models;
-
+ 
 namespace NationalParks.APIHandlerManager
 {
   public class APIHandler
