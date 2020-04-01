@@ -1,24 +1,24 @@
 ﻿@model NationalParks.Models.Parks
 
-<h1>Parks</h1>
+<h1>FCC</h1>
 <hr />
 
 @foreach (var item in Model.data)
 {
 <div>
     <h3>
-        @Html.DisplayFor(modelItem => item.fullName)
+        Official Title:
+        @Html.DisplayFor(modelItem => item.official_title)
     </h3>
     <div>
-        @Html.DisplayFor(modelItem => item.description)
     </div>
-    <a href="@item.url" target="_blank">
-        @Html.DisplayFor(modelItem => item.url)
     </a>
     <div>
-        <h5>Directions: </h5>
-        @Html.DisplayFor(modelItem => item.directionsInfo)
-    </div>
+        <h5>
+            Page Count:
+        @Html.DisplayFor(modelItem => item.page_count)
+     </h5>
+     </div>
 </div>
 <br/>
 }
